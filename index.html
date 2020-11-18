@@ -6,6 +6,13 @@
 -->
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<style>
+		#more {display: none;}
+		</style>
+
+
 		<title>Hafiz Ahmad Hassan</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -27,10 +34,10 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="generic.html">Study</a></li>
-											<li><a href="elements.html">Publications</a></li>
-											<li><a href="#">Certifications</a></li>
-											<li><a href="#">Contact Us</a></li>
+											<li><a href="generic.html">Academia</a></li>
+											<li><a href="elements.html">Showcase</a></li>
+											<li><a href="#">Work With Us</a></li>
+											<li><a href="#">Attachments</a></li>
 										</ul>
 									</div>
 								</li>
@@ -101,28 +108,28 @@
 						<div class="inner">
 							<header class="major">
 								<h2>Publication</h2>
-								<p>Summary of Current work on Publication<br />
+								<p>Working on Semi Supervised Random Forest<br />
 								........</p>
 							</header>
-							<ul class="features">
+							<ul class="wrapper style3 special">
 								<li class="icon fa-paper-plane">
-									<h3>Publication title</h3>
-									<p>Abstract</p>
-								</li>
-								<li class="icon solid fa-laptop">
-									<h3>Publication title</h3>
-									<p>Abstract</p>
-								</li>
-								<li class="icon solid fa-code">
-									<h3>Publication title</h3>
-									<p>Abstract</p>
-								</li>
-								<li class="icon solid fa-headphones-alt">
-									<h3>Publication title</h3>
-									<p>Abstract</p>
-								</li>
+									<h2>Skin Lesion Classification Using Deep Learning Techniques
+									</br>
+									(Abstract)
+									</h2>
+									<p>This work focuses on skin lesion 
+										classification in images using deep learning 
+										techniques. In first stage pre-processing techniques are applied to remove noisiness in images and to improve visuality of lesion area. Then Pre-processed melanoma images of benign and malignant tumours are fed to tumour 
+										classification model which is an 
+										expert system built to classify skin cancer in patients.
+										<span id="dots">...</span><span id="more">The model is trained on images using state of the art models i.e. ResNet34 [15] and ResNeXt50 [6]. Different evaluation measures are applied to analyse results. Then to improve results, different techniques are applied such as stochastic gradient descent, augmentation and learning rate adjustment. From dataset, 70% of the images are used for training and remaining 30% are used for testing purpose. Results obtained by applying Model-A and Model-B had given accuracy of 89.5% and 99.5% respectively.</span></p>
+									<button onclick="myFunction()" id="myBtn">Read more</button>
+								
+
+									</li>
+
 								<li class="icon fa-heart">
-									<h3>Publication title</h3>
+									<h3>Application of Genetic Algorithms in University Examination Timetable Scheduling</h3>
 									<p>Abstract</p>
 								</li>
 								<li class="icon fa-flag">
@@ -144,7 +151,7 @@
 								<li>		<a class="button fit primary"href="whatsapp://send?text=Hello Hassan!&phone=+393510889491">WhatsApp</a>
 								
 								</li>
-							<li><class="button fit primary"<a href="#" class="button fit primary">Email</a></li>
+							<li><a href="#" class="button fit primary">Email</a></li>
 							</ul>
 						</div>
 					</section>
@@ -176,5 +183,23 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+			</script>
 	</body>
 </html>
